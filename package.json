@@ -4,7 +4,7 @@
   "description": "Test repository with multiple vulnerable dependencies for SCS remediation testing",
   "main": "index.js",
   "dependencies": {
-    "lodash": "4.17.19",
+    "lodash": "4.17.22",
     "minimist": "1.2.5",
     "node-fetch": "2.6.0",
     "glob-parent": "5.1.1",
