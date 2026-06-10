@@ -1,0 +1,137 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:ab8210b2-797f-4e83-bcfa-3a429ca448c5",
+  "metadata": {
+    "timestamp": "2026-06-10T04:47:29.995Z",
+    "tools": [
+      {
+        "name": "npm",
+        "version": "10.8.2"
+      },
+      {
+        "vendor": "@cyclonedx",
+        "name": "cyclonedx-npm",
+        "version": "4.2.1",
+        "externalReferences": [
+          {
+            "url": "git+https://github.com/CycloneDX/cyclonedx-node-npm.git",
+            "type": "vcs",
+            "comment": "as detected from PackageJson property \"repository.url\""
+          },
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-node-npm#readme",
+            "type": "website",
+            "comment": "as detected from PackageJson property \"homepage\""
+          },
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-node-npm/issues",
+            "type": "issue-tracker",
+            "comment": "as detected from PackageJson property \"bugs.url\""
+          }
+        ]
+      },
+      {
+        "vendor": "@cyclonedx",
+        "name": "cyclonedx-library",
+        "version": "10.1.0",
+        "externalReferences": [
+          {
+            "url": "git+https://github.com/CycloneDX/cyclonedx-javascript-library.git",
+            "type": "vcs",
+            "comment": "as detected from PackageJson property \"repository.url\""
+          },
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-javascript-library#readme",
+            "type": "website",
+            "comment": "as detected from PackageJson property \"homepage\""
+          },
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-javascript-library/issues",
+            "type": "issue-tracker",
+            "comment": "as detected from PackageJson property \"bugs.url\""
+          }
+        ]
+      }
+    ],
+    "component": {
+      "type": "application",
+      "name": "test-vuln-repo",
+      "version": "1.0.0",
+      "bom-ref": "test-vuln-repo@1.0.0",
+      "description": "Test repository with vulnerable lodash for SCS remediation testing",
+      "purl": "pkg:npm/test-vuln-repo@1.0.0",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": ""
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "lodash",
+      "version": "4.17.19",
+      "bom-ref": "test-vuln-repo@1.0.0|lodash@4.17.19",
+      "author": "John-David Dalton",
+      "description": "Lodash modular utilities.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/lodash@4.17.19",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/lodash/lodash.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://lodash.com/",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/lodash/lodash/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "https://registry.npmjs.org/lodash/-/lodash-4.17.19.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "24dbddf17111f46417d2fdaa260b1a37f9b3142340e4145efe3f0937d77eb56c862d2a1d2901ca16271dc0d6335b0237c2346768a3ec1a3d579018f1fc5f7a0d"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/lodash"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "test-vuln-repo@1.0.0",
+      "dependsOn": [
+        "test-vuln-repo@1.0.0|lodash@4.17.19"
+      ]
+    },
+    {
+      "ref": "test-vuln-repo@1.0.0|lodash@4.17.19"
+    }
+  ]
+}

@@ -1,9 +1,21 @@
 {
   "name": "test-vuln-repo",
   "version": "1.0.0",
-  "description": "Test repository with vulnerable lodash for SCS remediation testing",
+  "description": "Test repository with multiple vulnerable dependencies for SCS remediation testing",
   "main": "index.js",
   "dependencies": {
-    "lodash": "4.17.19"
+    "lodash": "4.17.19",
+    "minimist": "1.2.5",
+    "node-fetch": "2.6.0",
+    "glob-parent": "5.1.1",
+    "tar": "6.1.0",
+    "path-parse": "1.0.6",
+    "nanoid": "3.1.22",
+    "follow-redirects": "1.14.7",
+    "json5": "2.2.1",
+    "semver": "7.3.7",
+    "axios": "0.21.1",
+    "express": "4.17.1",
+    "qs": "6.9.4"
   }
 }
