@@ -1,0 +1,9 @@
+{
+  "name": "test-vuln-repo",
+  "version": "1.0.0",
+  "description": "Test repository with vulnerable lodash for SCS remediation testing",
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "4.17.19"
+  }
+}
