@@ -20,6 +20,7 @@
     "node-forge": "1.2.1",
     "jsonwebtoken": "8.5.0",
     "shell-quote": "1.7.2",
-    "legacy-deps": "file:vendor/legacy-deps"
+    "legacy-deps": "file:vendor/legacy-deps",
+    "marked": "4.0.10"
   }
 }
