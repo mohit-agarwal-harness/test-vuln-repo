@@ -21,6 +21,7 @@
     "jsonwebtoken": "8.5.0",
     "shell-quote": "1.7.2",
     "nock": "14.0.10",
+    "morgan": "1.10.0",
     "legacy-deps": "file:vendor/legacy-deps"
   }
 }
